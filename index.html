@@ -17,6 +17,10 @@
         .font-work-sans {
             font-family: 'Work Sans', sans-serif;
         }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
     </style>
 </head>
 
@@ -25,11 +29,12 @@
         <!-- Banner Section -->
         <section class=" flex flex-col-reverse lg:flex-row items-center gap-5 md:gap-8 lg:gap-14 lg:py-11">
             <div class="text-center lg:w-3/5 ">
-                <h3 class="text-3xl font-medium">---SALE FEVER---</h3>
-                <h1 class="text-6xl font-bold mt-11 mb-16">Purchase TK 200 or <br> above & get <span
+                <h3 class="text-2xl md:text-3xl font-medium">---SALE FEVER---</h3>
+                <h1 class=" text-4xl md:text-6xl font-bold mt-11 mb-16">Purchase TK 200 or <br> above & get <span
                         class="text-[#E527B2]">20% off</span></h1>
-                <p class="text-2xl font-medium">Use Promo Code <button
-                        class="font-semibold text-2xl text-white btn btn-secondary ml-4">SELL200</button> </p>
+                <p class="text-xl md:text-2xl font-medium">Use Promo Code <button
+                        class="font-semibold text-xl md:text-2xl text-white btn btn-secondary ml-4">SELL200</button>
+                </p>
 
             </div>
             <div class="md:w-3/4 lg:w-2/5">
@@ -39,14 +44,15 @@
     </header>
     <main class="container bg-[#F8F8F8] mx-auto lg:px-32 ">
         <!-- Card & cart container -->
-        <section class="pt-14 md:pt-24 flex flex-col lg:flex-row gap-7">
+        <section class="pt-14 md:pt-24 flex flex-col md:flex-row gap-7">
             <!-- card container -->
-            <div class=" px-2 lg:px-0 lg:w-4/5">
+            <div class=" px-2 lg:px-0 md:w-4/5">
                 <!-- Kitchenware Card Container-->
-                <h2 class="text-5xl font-semibold mb-8 text-center lg:text-left lg:ml-2">Kitchenware</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 lg:p-0 justify-items-center">
+                <h2 class="text-4xl md:text-5xl font-semibold mb-8 text-center lg:text-left lg:ml-2">Kitchenware</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 p-4 lg:p-0 justify-items-center">
                     <!-- Kitchenware Card 1-->
-                    <div onclick="addToCart(this)" class="card cursor-pointer transition-transform transform hover:scale-105 w-full bg-base-100  rounded-lg  p-5">
+                    <div onclick="addToCart(this)"
+                        class="card duration-300 hover:bg-gradient-to-r from-purple-300 to-pink-300 cursor-pointer hover:scale-105 w-full bg-base-100  rounded-lg  p-5">
                         <figure class="bg-gray-200  h-2/3 px-16 py-8 rounded-lg">
                             <img src="./images/prod1.png" alt="fruit" />
                         </figure>
@@ -54,32 +60,33 @@
                             <div class="rating rating-half ">
                                 <input type="radio" name="rating-1" class="rating-hidden" />
                                 <input type="radio" name="rating-1"
-                                    class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                                    class="bg-orange-500  mask mask-star-2 mask-half-1" />
                                 <input type="radio" name="rating-1"
-                                    class="bg-orange-500 mask mask-star-2 mask-half-2" />
-                                <input type="radio" name="rating-1" class="bg-orange-500 mask mask-star-2 mask-half-1"
+                                    class="bg-orange-500  mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-1" class="bg-orange-500  mask mask-star-2 mask-half-1"
                                     checked />
                                 <input type="radio" name="rating-1"
-                                    class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                                    class="bg-orange-500  mask mask-star-2 mask-half-2" />
                                 <input type="radio" name="rating-1"
-                                    class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                                    class="bg-orange-500  mask mask-star-2 mask-half-1" />
                                 <input type="radio" name="rating-1"
-                                    class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                                    class="bg-orange-500  mask mask-star-2 mask-half-2" />
                                 <input type="radio" name="rating-1"
-                                    class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                                    class="bg-orange-500  mask mask-star-2 mask-half-1" />
                                 <input type="radio" name="rating-1"
-                                    class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                                    class="bg-orange-500  mask mask-star-2 mask-half-2" />
                                 <input type="radio" name="rating-1"
-                                    class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                                    class="bg-orange-500  mask mask-star-2 mask-half-1" />
                                 <input type="radio" name="rating-1"
-                                    class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                                    class="bg-orange-500  mask mask-star-2 mask-half-2" />
                             </div>
                             <h2 class="card-title text-xl font-semibold">Kitchen Utensil</h2>
                             <p class="text-title text-xl text-gray-600">39.00 TK</p>
                         </div>
                     </div>
                     <!-- Kitchenware Card 2-->
-                    <div onclick="addToCart(this)" class="card w-full cursor-pointer transition-transform transform hover:scale-105 bg-base-100  rounded-lg p-5">
+                    <div onclick="addToCart(this)"
+                        class="card w-full duration-300 hover:bg-gradient-to-r from-purple-300 to-pink-300 cursor-pointer hover:scale-105 bg-base-100  rounded-lg p-5">
                         <figure class="bg-gray-200 h-2/3 px-16 py-8 rounded-lg">
                             <img src="./images/prod2.png" alt="fruit" />
                         </figure>
@@ -112,7 +119,8 @@
                         </div>
                     </div>
                     <!-- Kitchenware Card 3-->
-                    <div onclick="addToCart(this)" class="card w-full bg-base-100 cursor-pointer transition-transform transform hover:scale-105 rounded-lg p-5">
+                    <div onclick="addToCart(this)"
+                        class="card w-full duration-300 hover:bg-gradient-to-r from-purple-300 to-pink-300 bg-base-100 cursor-pointer  hover:scale-105 rounded-lg p-5">
                         <figure class="bg-gray-200 h-2/3 px-16 py-8 rounded-lg">
                             <img src="./images/prod3.png" alt="fruit" />
                         </figure>
@@ -146,10 +154,12 @@
                     </div>
                 </div>
                 <!-- Sportswear Card Container-->
-                <h2 class="text-5xl font-semibold mb-8 mt-16 text-center lg:text-left lg:ml-2">Sportswear</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 lg:p-0 justify-items-center">
+                <h2 class="text-4xl md:text-5xl font-semibold mb-8 mt-16 text-center lg:text-left lg:ml-2">Sportswear
+                </h2>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 p-4 lg:p-0 justify-items-center">
                     <!-- Sportswear Card 1-->
-                    <div onclick="addToCart(this)" class="card w-full bg-base-100 cursor-pointer transition-transform transform hover:scale-105 rounded-lg  p-5">
+                    <div onclick="addToCart(this)"
+                        class="card w-full duration-300 hover:bg-gradient-to-r from-purple-300 to-pink-300 bg-base-100 cursor-pointer  hover:scale-105 rounded-lg  p-5">
                         <figure class="bg-gray-200 h-2/3 px-16 py-8 rounded-lg">
                             <img src="./images/prod4.png" alt="fruit" />
                         </figure>
@@ -182,7 +192,8 @@
                         </div>
                     </div>
                     <!-- Sportswear Card 2-->
-                    <div onclick="addToCart(this)" class="card w-full bg-base-100 cursor-pointer transition-transform transform hover:scale-105 rounded-lg p-5">
+                    <div onclick="addToCart(this)"
+                        class="card w-full duration-300 hover:bg-gradient-to-r from-purple-300 to-pink-300 bg-base-100 cursor-pointer  hover:scale-105 rounded-lg p-5">
                         <figure class="bg-gray-200 h-2/3 px-16 py-8 rounded-lg">
                             <img src="./images/prod5.png" alt="fruit" />
                         </figure>
@@ -215,7 +226,8 @@
                         </div>
                     </div>
                     <!-- Sportswear Card 3-->
-                    <div onclick="addToCart(this)" class="card w-full bg-base-100 cursor-pointer transition-transform transform hover:scale-105 rounded-lg p-5">
+                    <div onclick="addToCart(this)"
+                        class="card w-full duration-300 hover:bg-gradient-to-r from-purple-300 to-pink-300 bg-base-100 cursor-pointer  hover:scale-105 rounded-lg p-5">
                         <figure class="bg-gray-200 h-2/3 px-16 py-8 rounded-lg">
                             <img src="./images/prod6.png" alt="fruit" />
                         </figure>
@@ -249,10 +261,12 @@
                     </div>
                 </div>
                 <!-- Furniture Card Container-->
-                <h2 class="text-5xl font-semibold mb-8 mt-16 text-center lg:text-left lg:ml-2">Furniture</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 lg:p-0 justify-items-center mb-14">
+                <h2 class="text-4xl md:text-5xl font-semibold mb-8 mt-16 text-center lg:text-left lg:ml-2">Furniture
+                </h2>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 p-4 lg:p-0 justify-items-center mb-14">
                     <!-- Furniture Card 1-->
-                    <div onclick="addToCart(this)" class="card w-full bg-base-100 cursor-pointer transition-transform transform hover:scale-105 rounded-lg  p-5">
+                    <div onclick="addToCart(this)"
+                        class="card w-full duration-300 hover:bg-gradient-to-r from-purple-300 to-pink-300 bg-base-100 cursor-pointer  hover:scale-105 rounded-lg  p-5">
                         <figure class="bg-gray-200 h-2/3 px-16 py-8 rounded-lg">
                             <img src="./images/prod7.png" alt="fruit" />
                         </figure>
@@ -285,7 +299,8 @@
                         </div>
                     </div>
                     <!-- Furniture Card 2-->
-                    <div onclick="addToCart(this)" class="card w-full bg-base-100 cursor-pointer transition-transform transform hover:scale-105 rounded-lg p-5">
+                    <div onclick="addToCart(this)"
+                        class="card w-full duration-300 hover:bg-gradient-to-r from-purple-300 to-pink-300 bg-base-100 cursor-pointer  hover:scale-105 rounded-lg p-5">
                         <figure class="bg-gray-200 h-2/3 px-16 py-8 rounded-lg">
                             <img src="./images/prod8.png" alt="fruit" />
                         </figure>
@@ -318,7 +333,8 @@
                         </div>
                     </div>
                     <!-- Furniture Card 3-->
-                    <div onclick="addToCart(this)" class="card w-full bg-base-100 cursor-pointer transition-transform transform hover:scale-105 rounded-lg p-5">
+                    <div onclick="addToCart(this)"
+                        class="card w-full duration-300 hover:bg-gradient-to-r from-purple-300 to-pink-300 bg-base-100 cursor-pointer  hover:scale-105 rounded-lg p-5">
                         <figure class="bg-gray-200 h-2/3 px-16 py-8 rounded-lg">
                             <img src="./images/prod9.png" alt="fruit" />
                         </figure>
@@ -353,28 +369,33 @@
                 </div>
             </div>
             <!-- shopping cart -->
-            <div class=" pb-14 lg:pb-0 lg:w-1/3 lg:mt-20">
+            <div class="md:mr-3 lg:mr-0 pb-14 lg:pb-0 lg:w-1/3 sticky top-0 h-fit lg:mt-20">
                 <!-- coupon -->
                 <div class="bg-[#FFF] p-6 mb-6 rounded-lg">
                     <h3 class="text-2xl font-semibold mb-3">Have coupon?</h3>
                     <div class="join">
-                        <input id="coupon-field" class="input w-3/4 input-bordered join-item border-r-0 text-xl font-medium" placeholder="Coupon code" />
-                        <button onclick="applyCoupon()" id="apply" disabled class="btn btn-secondary text-white text-xl join-item rounded-lg">Apply</button>
+                        <input id="coupon-field"
+                            class="input w-3/4 input-bordered md:p-2 join-item border-r-0 text-xl md:text-lg lg:text-xl font-medium"
+                            placeholder="Coupon code" />
+                        <button onclick="applyCoupon()" id="apply" disabled
+                            class="btn btn-secondary text-white text-xl join-item rounded-lg"
+                            title="Use 'SELL200' to get 20% discount (maximum 200TK)">Apply</button>
                     </div>
+                    <p id="coupon-success" class="mt-3 text-base font-medium text-green-600"></p>
                 </div>
                 <!-- cart -->
                 <div class="p-6 pb-14 bg-[#FFF] relative rounded-lg">
-                    <div id="card-item" class="text-2xl font-semibold mb-3 min-h-[100px]">
+                    <div id="card-item" class="text-xl lg:text-2xl font-semibold mb-3 min-h-[100px]">
                     </div>
                     <hr>
-                    <div class="text-2xl pr-0 w-full font-semibold my-5">
+                    <div class="text-2xl md:text-xl lg:text-2xl pr-0 w-full font-semibold my-5">
                         <p>Total price: <span id="total-price" class="text-gray-600">00.00</span> TK</p>
                         <p class="my-2">Discount: <span id="discount" class=" text-gray-600">00.00</span> TK</p>
                         <p>Total: <span id="total" class=" text-gray-600">00.00</span> TK</p>
                     </div>
                     <hr>
-                    <button class="btn btn-secondary absolute w-1/2 lg:w-4/5 -bottom-5 text-white text-xl rounded-lg" id="make-purchase" disabled
-                        onclick="my_modal_1.showModal()">Make
+                    <button class="btn btn-secondary absolute w-4/5 -bottom-5 text-white text-xl rounded-lg"
+                        id="make-purchase" disabled onclick="my_modal_1.showModal()">Make
                         Purchase</button>
                     <dialog id="my_modal_1" class="modal">
                         <form method="dialog" class="modal-box p-10">
@@ -382,7 +403,8 @@
                             <h3 class="font-bold text-4xl text-center my-4">Congratulations</h3>
                             <p class="py-4 mb-2 text-title text-center font-medium">Your Purchase the product</p>
                             <div class="modal-action flex flex-row justify-center">
-                                <button onclick="goHome()" class="btn btn-secondary text-xs md:text-xl md:font-bold text-[#FFF]">Go
+                                <button onclick="goHome()"
+                                    class="btn btn-secondary text-xs md:text-xl md:font-bold text-[#FFF]">Go
                                     Home</button>
                             </div>
                         </form>
